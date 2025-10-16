@@ -16,6 +16,6 @@ public class CuentaBancaria {
     public void retirar(double monto){
         if (monto > saldo)
             throw new IllegalArgumentException("Fondos insuficientes");
-        saldo -= monto;
+        saldo += monto;  //Error intencional, en vez de retirar suma
     }
 }
